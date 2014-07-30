@@ -9,7 +9,7 @@ The Load More Posts plugin allows you to easily set up an ajax load more button.
 
 Simply add the function
 
-`<?php load_more_button(); ?>`
+`load_more_button();`
 
 into your code where you desire the load button to appear.
 
@@ -20,7 +20,7 @@ By default the load more posts plugin will use `content-default.php` with `conte
 
 Examples
 -----
-`<?php load_more_button( 'homepage', 'Get More Articles' ); ?>`
+`load_more_button( 'homepage', 'Get More Articles' );`
 
 Will load a button with the label 'Get More Articles' which uses `content-homepage.php` as the template for newly loaded content.  This setup works well with index pages with the loop set up as:
 

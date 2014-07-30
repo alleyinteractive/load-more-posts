@@ -27,8 +27,8 @@ Will load a button with the label 'Get More Articles' which uses `content-homepa
 ```
 if ( have_posts() ) :
 	while ( have_posts() ) : the_post();
-		get_template_part( 'content', get_post_type() );
+		get_template_part( 'content', 'homepage' );
 	endwhile; // end of the loop.
 endif;
-load_more_button();
+load_more_button( 'homepage' );
 ```

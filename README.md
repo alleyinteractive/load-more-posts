@@ -1,5 +1,4 @@
 # Load More Posts
-===============
 
 Easily add an ajax load more button.
 
@@ -25,9 +24,11 @@ Examples
 
 Will load a button with the label 'Get More Articles' which uses `content-homepage.php` as the template for newly loaded content.  This setup works well with index pages with the loop set up as:
 
-`<?php if ( have_posts() ) : ?>
-	<?php while ( have_posts() ) : the_post(); ?>
-		<?php get_template_part( 'content', get_post_type() ); ?>
-	<?php endwhile; // end of the loop. ?>
-<?php endif; ?>
-<?php load_more_button(); ?>`
+```
+if ( have_posts() ) :
+	while ( have_posts() ) : the_post();
+		get_template_part( 'content', get_post_type() );
+	endwhile; // end of the loop.
+endif;
+load_more_button();
+```

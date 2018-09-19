@@ -79,6 +79,7 @@ class Load_More_Posts {
 			$context = ( ! empty( $_POST['context'] ) ) ? sanitize_text_field( $_POST['context'] ) : 'default';
 			$args = (array) $_POST['query'];
 			$args['paged'] = sanitize_text_field( $_POST['paged'] );
+			$args['post_status'] = 'publish';
 
 			// A filter if you want to customize the query
 			$args = apply_filters( 'load-more-posts-args-' . sanitize_text_field( $_POST['context'] ), $args );
